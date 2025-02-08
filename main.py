@@ -9,6 +9,9 @@ from kivy.uix.image import Image
 from kivy.core.window import Window
 Window.clearcolor = (1, 1, 1, 1)
 
+dice_num = 0
+prev_dice_num = 0
+
 # App class
 class DieSimulator(App):
     def build(self):
@@ -24,7 +27,7 @@ class DieSimulator(App):
             prev_dice_num = dice_num
 
         # Create a BoxLayout and add the widgets(an Image object to display the die and the roll button)
-        self.title = 'Dice Simulator'
+        self.title = 'Die Simulator'
         layout = BoxLayout(orientation='vertical')
         roll_button = Button(text='Roll')
         roll_button.bind(on_press=callback)
