@@ -1,3 +1,4 @@
+# Import needed libraries
 import kivy
 kivy.require(kivy.__version__)
 import random
@@ -8,19 +9,21 @@ from kivy.uix.image import Image
 from kivy.core.window import Window
 Window.clearcolor = (1, 1, 1, 1)
 
-class DiceSimulator(App):
+# App class
+class DieSimulator(App):
     def build(self):
         log = [0]
+        # The callback function will run when the button is clicked
         def callback(instance):
-            dice_num = log[-1]
-            while (dice_num == log[-1]):
+            # Generate a number, making sure it's different from the previous one
+            while dice_num == prev_dice_num:
                 dice_num = random.randint(1, 6)
-            log.append(dice_num)
+            # Load the image
             dice_filename = f"images/die{str(dice_num)}.png"
-            print(dice_filename)
             dice_image.source = dice_filename
             prev_dice_num = dice_num
-            
+
+        # Create a BoxLayout and add the widgets(an Image object to display the die and the roll button)
         self.title = 'Dice Simulator'
         layout = BoxLayout(orientation='vertical')
         roll_button = Button(text='Roll')
@@ -30,4 +33,4 @@ class DiceSimulator(App):
         layout.add_widget(dice_image)
         return layout
 
-DiceSimulator().run()
+DieSimulator().run()
