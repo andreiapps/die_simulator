@@ -1,4 +1,4 @@
-#Inport required libraries
+# Import required libraries
 import kivy
 kivy.require(kivy.__version__)
 import random
