@@ -1,8 +1,49 @@
 # Die Simulator
-Die Simulator is a mobile app that simulates a die. I might add more features and make it better.
+Die Simulator is a mobile app made in Python with the Kivy framework that simulates a die. I might add more features later.
 
-To run the project locally, clone the repository, install the kivy Python module and run the app with python by executing "python main.py" or "python3 main.py" from the project directory.
+## Running locally
+1. Install [Python](https://python.org/download) and [Git](https://git-scm.com/install)
+2. Clone the repo:
+   ```bash
+   git clone https://github.com/andreiapps/die_simulator
+   cd die_simulator
+   ```
+3. Install Kivy:
+   ```bash
+   pip install kivy
+   ```
+   or
+   ```bash
+   pip3 install kivy
+   ```
+4. Run the app:
+   ```bash
+   python main.py
+   ```
+   or
+   ```bash
+   python3 main.py
+   ```
 
-If you want to build it, clone the repo, install kivy and use a tool such as [Buildozer](https://github.com/kivy/buildozer) to build the app for Android or iOS.
+## Building
+Follow the steps above, then also:
+1. Install buildozer:
+   ```bash
+   pip install buildozer
+   ```
+   or
+   ```bash
+   pip3 install buildozer
+   ```
+2. Build the app:
+   To build for Android:
+   ```bash
+   buildozer android debug
+   ```
+   or to build for iOS(you will need a Mac with Xcode for this):
+   ```bash
+   buildozer ios debug
+   ```
 
+## License
 This program is licensed under the GPL-v3 license
