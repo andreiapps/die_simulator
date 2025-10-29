@@ -48,7 +48,7 @@ Follow the steps above, then also:
 ## Planned features
 - Ability to customize the number of dice
 - Ability to customize the color of the dice
-- ABility to customize the color of the dots on the dice
+- Ability to customize the color of the dots on the dice
 
 ## License
 This program is licensed under the GPL-v3 license
