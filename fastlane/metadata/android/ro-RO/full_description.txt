@@ -1,0 +1,1 @@
+Die Simulator este o aplicație simplă care îți permite să arunci un zar. În viitor, plănuiesc să adaug posibilitatea de a schimba numărul de zaruri, deoarece acum există doar unul, și de a schimba culoarea zarurilor și punctele de pe zaruri.

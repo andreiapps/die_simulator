@@ -1,0 +1,1 @@
+Die Simulator is a simple app which allows you to roll a die. In the future I am planning to add the ability to change the number of dice, as there's only one now, and to change the color of the dice and the dots on the dice
