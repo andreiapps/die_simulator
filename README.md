@@ -29,20 +29,13 @@ Die Simulator is a mobile app made in Python with the Kivy framework that simula
 
 ## Building
 Follow the steps above, then also:
-1. Install buildozer:
-   ```bash
-   pip install buildozer
-   ```
-   or
-   ```bash
-   pip3 install buildozer
-   ```
+1. Install buildozer using the [Installation Guide](https://buildozer.readthedocs.io/en/latest/installation.html)
 2. Build the app:
    To build for Android:
    ```bash
    buildozer android debug
    ```
-   or to build for iOS(you will need a Mac with Xcode for this):
+   or to build for iOS:
    ```bash
    buildozer ios debug
    ```
