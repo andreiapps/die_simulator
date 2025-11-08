@@ -11,7 +11,7 @@ Window.clearcolor = (1, 1, 1, 1)
 
 class DieSimulator(App):
     def build(self):
-        # For some reason I can't make this a normal variable, because it will give an error
+        # For some reason I can't make this a normal variable, because it will give an error related to the scope of the variable
         log = [0]
         def callback(instance):
             # Generate a number different from the one previously generated and show the corresponding image
@@ -30,8 +30,8 @@ class DieSimulator(App):
         layout = BoxLayout(orientation='vertical')
         roll_button = Button(text='Roll')
         roll_button.bind(on_press=callback)
-        layout.add_widget(roll_button)
         die_image = Image()
         layout.add_widget(die_image)
+        layout.add_widget(roll_button)
         return layout
 DieSimulator().run()
