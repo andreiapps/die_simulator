@@ -1,0 +1,3 @@
+- Pozițiile butonului de dat cu zarul și a zarului au fost schimbate între ele(sugerat de @smed79 pe GitHub)
+- Fețele zarului nu mai sunt doar imagini. Acum sunt desenate de fiecare dată când dai cu zarul
+- Când dai cu zarul acum apare o animație. Nu e cea mai bună dar măcar e ceva

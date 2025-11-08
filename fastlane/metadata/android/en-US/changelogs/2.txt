@@ -1,0 +1,3 @@
+- Swapped roll button and die image(suggested by @smed79 on GitHub)
+- Die faces aren't just images anymore. Now they're manually drawn every time the die is rolled
+- Added a roll animation for the die. Not the best but it's something
