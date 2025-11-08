@@ -1,7 +1,7 @@
 # Die Simulator
 Die Simulator is a mobile app made in Python with the Kivy framework that simulates a die. I might add more features later.
 
-![Die Simulator](icon.png)
+![Die Simulator](fastlane/metadata/android/en-US/images/icon.png)
 
 ## Running locally
 1. Install [Python](https://python.org/download) and [Git](https://git-scm.com/install)
