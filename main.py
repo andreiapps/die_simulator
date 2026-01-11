@@ -67,7 +67,7 @@ class DieSimulator(App):
         self.roll_button.bind(on_press=self.start_roll)
         self.die = Widget(size_hint=(1, 0.5))
         layout.add_widget(self.die)
-        layout.add_widget(roll_button)
+        layout.add_widget(self.roll_button)
         return layout
 DieSimulator().run()
 
