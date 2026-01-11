@@ -26,22 +26,23 @@ class DieSimulator(App):
             Color(1, 1, 1)
             # Generate a random number from 1 to 6 and generate a matrix where 1 represents a dot and 0 represents no dot
             num = random.randint(1, 6)
-            if (num == 1):
-                face = [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
-            elif (num == 2):
-                face = [[1, 0, 0], [0, 0, 0], [0, 0, 1]]
-            elif (num == 3):
-                face = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
-            elif (num == 4):
-                face = [[1, 0, 1], [0, 0, 0], [1, 0, 1]]
-            elif (num == 5):
-                face = [[1, 0, 1], [0, 1, 0], [1, 0, 1]]
-            else:
-                face = [[1, 1, 1], [0, 0, 0], [1, 1, 1]]
+            match num:
+                case 1:
+                    face = [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
+                case 2:
+                    face = [[1, 0, 0], [0, 0, 0], [0, 0, 1]]
+                case 3:
+                    face = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+                case 4:
+                    face = [[1, 0, 1], [0, 0, 0], [1, 0, 1]]
+                case 5:
+                    face = [[1, 0, 1], [0, 1, 0], [1, 0, 1]]
+                case 6:
+                    face = [[1, 1, 1], [0, 0, 0], [1, 1, 1]]
             # Draw the dots according to the matrix
             for l in range(3):
                 for c in range(3):
-                    if (face[l][c] == 1):
+                    if face[l][c] == 1:
                         Ellipse(pos=(x + dist * (c + 1) + dot_size * c, y + dist * (l + 1) + dot_size * l), size=(dot_size, dot_size))
         
     def start_roll(self, instance):
@@ -54,8 +55,8 @@ class DieSimulator(App):
         num = random.randint(1, 6)
         self.draw_face(num)
         self.count += 1
-        # If the die has been rolled 5 times then stop
-        if (self.count >= 5):
+        # If the die has been rolled 5 times and the button isn't pressed then stop. This adds the ability to hold the button to create suspense
+        if self.count >= 5 and self.roll_button.state == "normal":
             Clock.unschedule(self.roll_step)
     
     def build(self): 
@@ -69,3 +70,4 @@ class DieSimulator(App):
         layout.add_widget(roll_button)
         return layout
 DieSimulator().run()
+
