@@ -63,11 +63,12 @@ class DieSimulator(App):
         # Create the box layout and add an Image widget and the roll button
         self.title = 'Die Simulator'
         layout = BoxLayout(orientation='vertical')
-        roll_button = Button(text='Roll', size_hint=(1, 0.5))
-        roll_button.bind(on_press=self.start_roll)
+        self.roll_button = Button(text='Roll', size_hint=(1, 0.5))
+        self.roll_button.bind(on_press=self.start_roll)
         self.die = Widget(size_hint=(1, 0.5))
         layout.add_widget(self.die)
         layout.add_widget(roll_button)
         return layout
 DieSimulator().run()
+
 
