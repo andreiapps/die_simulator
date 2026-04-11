@@ -1,5 +1,5 @@
 # Die Simulator
-Die Simulator is a mobile app made in Python with the Kivy framework that simulates a die. I might add more features later.
+Die Simulator is a mobile app made in Python with the Kivy framework that simulates a die. It also has a basic rolling animation which you can make longer by holding the roll button. I might add more features later.
 
 ![Die Simulator](fastlane/metadata/android/en-US/images/icon.png)
 
