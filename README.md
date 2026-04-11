@@ -3,6 +3,10 @@ Die Simulator is a mobile app made in Python with the Kivy framework that simula
 
 ![Die Simulator](fastlane/metadata/android/en-US/images/icon.png)
 
+[<img src="https://f-droid.org/badge/get-it-on.png"
+    alt="Get it on F-Droid"
+    height="80">](https://f-droid.org/packages/com.andreiapps.diesimu)
+
 ## Running locally
 1. Install [Python](https://python.org/download) and [Git](https://git-scm.com/install)
 2. Clone the repo:
